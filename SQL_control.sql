@@ -63,7 +63,6 @@ BEGIN
     MYLABEL : LOOP
 		-- INSERT문 수행하되 VCNT를 EMPNO으로 넣기
         -- 사원명 PNAME으로, 급여는 (VCNT-2000) , 업무 : SALESMAN
-        -- VCNT값은 반복문을 돌면서 10씩 증가시키세요 VCNT 값이 8600이 되엇을 때 반복문 벗어나기
         INSERT INTO emp_test(EMPNO,ENAME,SAL,JOB)
         VALUES(VCNT,PNAME,(VCNT-2000),'SALESMAN');
         SET VCNT = VCNT+10;
