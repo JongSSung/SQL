@@ -1,0 +1,17 @@
+USE [THINMESFK]
+GO
+/****** Object:  StoredProcedure [dbo].[SP_GET_TBADURGTELINFO]    Script Date: 2023-01-09 오후 5:57:25 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[SP_GET_TEST]
+	
+AS
+BEGIN	
+	SELECT U.UNICD, K.KANBANNO FROM TB_UNIMST2INFO U, TB_KANBANINFO K
+
+END
+
+
+--신규 페이지에 차종을 넣기위해 새로운 저장프로시저 생성
